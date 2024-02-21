@@ -1,0 +1,3 @@
+rootProject.name = 'car-service'
+include 'car-web-service'
+include 'car-position-producer'
