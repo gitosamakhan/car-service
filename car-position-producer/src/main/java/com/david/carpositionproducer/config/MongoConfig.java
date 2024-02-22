@@ -22,7 +22,7 @@ public class MongoConfig extends AbstractMongoClientConfiguration {
     @Bean
     @NonNull
     public MongoClient mongoClient() {
-        String mongoUri = "mongodb://admin:password@localhost:27017";
+        String mongoUri = "mongodb://admin:password@mongodb:27017";
         return MongoClients.create(mongoUri);
     }
 }
