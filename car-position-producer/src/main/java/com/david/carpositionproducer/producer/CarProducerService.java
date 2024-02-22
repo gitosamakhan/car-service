@@ -1,6 +1,6 @@
 package com.david.carpositionproducer.producer;
 
-import com.david.carpositionproducer.domain.Car;
+import com.david.carlibrary.domain.Car;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;

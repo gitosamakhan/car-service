@@ -1,16 +1,14 @@
 package com.david.carpositionproducer.controller;
 
-import com.david.carpositionproducer.domain.Car;
+import com.david.carlibrary.domain.Car;
+import com.david.carlibrary.repository.CarRepository;
 import com.david.carpositionproducer.producer.CarProducerService;
-import com.david.carpositionproducer.repository.CarRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
-@RequestMapping("api/v1")
-public class CarController {
+@RequestMapping("api/v1/car")
+public class CarEnqueueController {
 
     @Autowired
     private CarProducerService carProducerService;
@@ -18,12 +16,7 @@ public class CarController {
     @Autowired
     private CarRepository carRepository;
 
-    @GetMapping("/car")
-    public List<Car> enqueueCar() {
-        return carRepository.findAll();
-    }
-
-    @PostMapping("/car")
+    @PostMapping("enqueue")
     public void saveCar(@RequestBody Car car) {
         carProducerService.enqueueCar(car);
     }

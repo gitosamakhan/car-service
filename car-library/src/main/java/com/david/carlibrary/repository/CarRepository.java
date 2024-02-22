@@ -1,6 +1,6 @@
-package com.david.carpositionproducer.repository;
+package com.david.carlibrary.repository;
 
-import com.david.carpositionproducer.domain.Car;
+import com.david.carlibrary.domain.Car;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

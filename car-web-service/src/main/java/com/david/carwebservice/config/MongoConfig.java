@@ -1,4 +1,4 @@
-package com.david.carpositionproducer.config;
+package com.david.carwebservice.config;
 
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;

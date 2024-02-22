@@ -1,4 +1,4 @@
-package com.david.carpositionproducer.domain;
+package com.david.carlibrary.domain;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -28,3 +28,4 @@ public class Car {
         return id;
     }
 }
+

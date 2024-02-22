@@ -9,6 +9,7 @@ repositories {
 }
 
 dependencies {
+    implementation project(':car-library')
     implementation 'org.springframework.kafka:spring-kafka'
     runtimeOnly 'org.postgresql:postgresql'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'

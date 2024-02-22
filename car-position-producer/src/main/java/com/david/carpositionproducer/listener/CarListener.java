@@ -1,7 +1,7 @@
 package com.david.carpositionproducer.listener;
 
-import com.david.carpositionproducer.domain.Car;
-import com.david.carpositionproducer.repository.CarRepository;
+import com.david.carlibrary.domain.Car;
+import com.david.carlibrary.repository.CarRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
