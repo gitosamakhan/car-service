@@ -28,6 +28,17 @@ services:
     depends_on:
       - zookeeper
 
+  mongodb:
+    image: mongo
+    container_name: mongodb-car-service
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password
+    volumes:
+      - mongodb_data:/data/db
+
   car-position-producer:
     build:
       context: ./car-position-producer
@@ -39,3 +50,7 @@ services:
       - "8081:8080"
     depends_on:
       - kafka
+      - mongodb
+
+volumes:
+  mongodb_data:
